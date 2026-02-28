@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>どんぶり帳簿 - 青色申告（65万円控除）クリアのための超・割り切り帳簿</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ea580c, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+
+    <!-- ナビゲーション -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-black text-orange-600 tracking-tight">どんぶり帳簿</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#pain" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">よくある挫折</a>
+                        <a href="#concept" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">非常識なルール</a>
+                        <a href="#target" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">対象者</a>
+                        <a href="#app" class="bg-orange-600 text-white px-5 py-2 rounded-full font-medium hover:bg-orange-700 transition">アプリを使う</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-700 font-bold text-sm mb-6 border border-orange-200">
+                    プロトタイプ版 1年間無料公開中
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-8 leading-tight">
+                    青色申告クリアのための<br>
+                    <span class="text-gradient">超・割り切り帳簿システム</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-medium">
+                    残高が合わない。すべての経費を入力するのが面倒。事業主貸・借がわからない。<br class="hidden sm:block">
+                    そんな「従来の会計ソフトで挫折した人」のための、最短ルートで65万円控除を得るツールです。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#app" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-orange-600 rounded-xl hover:bg-orange-700 shadow-lg shadow-orange-200 transition-all transform hover:-translate-y-1">
+                        今すぐアプリを試す
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-700 bg-gray-100 border border-gray-300 rounded-xl hover:bg-gray-200 transition-all">
+                        入力シートを見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ペイン（課題）セクション -->
+    <section id="pain" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">こんな経験、ありませんか？</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">真面目に記帳しようとして、システムに怒られ、心を折られたあなたへ。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-red-400 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">銀行残高不一致の恐怖</h3>
+                    <p class="text-gray-400">生活費と事業費の口座やクレジットカードが混ざっていて、何度計算しても実際の残高とソフトの残高が合わず、申告を諦めかけた。</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-red-400 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">謎の「事業主貸・借」</h3>
+                    <p class="text-gray-400">簿記の知識がないため、プライベートな支払いや入金が発生するたびに仕訳に悩み、手が止まってしまう。</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-red-400 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">終わらない入力作業</h3>
+                    <p class="text-gray-400">少額のレシートまで1円単位ですべて入力しなければならないという強迫観念で、本業の時間を削られている。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト（常識の逆張り）セクション -->
+    <section id="concept" class="py-24 bg-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Core Concept</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">常識を捨てる。結果だけを取る。</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">経営分析のための帳簿ではありません。最短ルートで「65万円控除」という節税効果を得るためだけに設計された、非常識な思想です。</p>
+            </div>
+
+            <div class="space-y-16 max-w-4xl mx-auto">
+                <!-- コンセプト1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">1</div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4">「残高合わせ」という概念をなくす</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            現預金を一切記帳しません。事業主借も記帳しません。すべて「事業主貸」勘定で一元処理します。これにより、生活費と事業費が混ざっていても、通帳と帳簿の残高を合わせる苦痛から完全に解放されます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- コンセプト2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">2</div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4">足るを知る記帳（タイパ至上主義）</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            すべての経費を入力する必要はありません。65万円控除によって課税所得が目標ラインまで圧縮できた時点で、残りの少額レシート等の入力作業は打ち切ります。無駄な作業を徹底的に削ぎ落とします。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- コンセプト3 -->
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">3</div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4">経営分析より、節税という結果</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            複雑な利益率分析や資金繰り管理はできません。しかし、簿記の知識が全くなくても、迷うことなく入力でき、最終的にe-Taxへ転記して青色申告を完了させることだけに特化しています。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- コンセプト4 -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">4</div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4">機能を削ぎ落としたからこその、圧倒的な低コスト</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            一般的な会計ソフトは多機能化にともない利用料が高騰しています。どんぶり帳簿は「口座の自動連携」や「高度な分析」といった機能をあえて切り捨てました。開発・維持コストを極限まで抑えているからこそ、どんな会計アプリよりも安い圧倒的な低価格（現在はプロトタイプ期間につき1年間無料）で提供できるのです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 仕組みセクション -->
+    <section id="how-it-works" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">使い方は驚くほどシンプル</h2>
+            <div class="flex flex-col md:flex-row justify-center items-start gap-8 relative">
+                <!-- ステップ間の線（PCのみ） -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-200 -z-10"></div>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">1</div>
+                    <h3 class="text-lg font-bold mb-3">スプレッドシートに入力</h3>
+                    <p class="text-sm text-gray-600">提供する専用のスプレッドシートに、売上と経費だけをひたすら入力します。複雑な仕訳は不要です。</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">2</div>
+                    <h3 class="text-lg font-bold mb-3">WEBアプリに入力</h3>
+                    <p class="text-sm text-gray-600">入力が終わったスプレッドシートのURLを、下部の決算書出力用WEBアプリに入力しボタンを押すだけ。</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">3</div>
+                    <h3 class="text-lg font-bold mb-3">e-Taxに転記して完了</h3>
+                    <p class="text-sm text-gray-600">アプリが出力した決算書の数値を、そのままe-Taxの画面に入力するだけで青色申告が完了します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ターゲット（向いている人・向いていない人） -->
+    <section id="target" class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-6">万人のためのツールではありません</h2>
+                <p class="text-gray-600">特定の課題を持つ方に深く刺さるよう、あえて機能を削ぎ落としています。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 向いている人 -->
+                <div class="bg-white p-8 rounded-3xl border-t-4 border-t-orange-500 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">向いている人</h3>
+                    </div>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>生活費と事業費の口座やカードが混ざっている</li>
+                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>既存の会計ソフトの「残高合わせ」で挫折した</li>
+                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>仕入や在庫を持たない事業（エンジニア、ライター、コンサル、デザイナー等）</li>
+                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>経営分析は不要。節税という結果だけを効率よく得たい</li>
+                    </ul>
+                </div>
+
+                <!-- 向いていない人 -->
+                <div class="bg-gray-100 p-8 rounded-3xl border-t-4 border-t-gray-400">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-600">向いていない人</h3>
+                    </div>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>せどりや物販など、仕入や期末の棚卸しが発生する</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>事業規模が大きく、精密な資金繰り管理や利益率分析が必要</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>すでに専用口座を用意し、既存ソフトの自動連携を使いこなせている</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>複雑な掛取引（売掛金・買掛金）が多い</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>将来の法人成りを見据え、厳格な複式簿記に慣れておきたい</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アプリ埋め込みセクション -->
+    <section id="app" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Application</span>
+                <h2 class="text-3xl font-bold mt-2 mb-4">決算書出力アプリ（プロトタイプ版）</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    入力が完了したスプレッドシートのURLを下のアプリに貼り付け、実行してください。
+                </p>
+                <div class="mt-4">
+                    <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="text-orange-600 hover:text-orange-800 underline font-medium">
+                        入力用スプレッドシートの取得はこちら
+                    </a>
+                </div>
+            </div>
+
+            <!-- iframeによるアプリ埋め込み -->
+            <div class="bg-gray-50 p-4 sm:p-8 rounded-3xl border border-gray-200 shadow-inner">
+                <iframe 
+                    src="https://script.google.com/macros/s/AKfycbyusFIH-3J_bxFrh2GMVOx26-TIQdKniGgHDNe8KAeYIXLryCqeadBQteySdXXVgUve/exec" 
+                    class="w-full h-[600px] border-0 rounded-xl bg-white shadow-sm"
+                    title="どんぶり帳簿 決算書出力アプリ">
+                </iframe>
+            </div>
+            
+            <div class="text-center mt-6">
+                <p class="text-sm text-gray-500 mb-4">※表示領域が狭い場合は、別ウィンドウで開くことも可能です。</p>
+                <a href="https://script.google.com/macros/s/AKfycbyusFIH-3J_bxFrh2GMVOx26-TIQdKniGgHDNe8KAeYIXLryCqeadBQteySdXXVgUve/exec" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-all">
+                    別タブでアプリを開く
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section id="cta" class="py-24 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-black mb-6">現在、1年間無料で公開中</h2>
+            <p class="text-orange-100 text-lg mb-10 leading-relaxed">
+                どんぶり帳簿は現在プロトタイプ版として提供しています。<br>
+                ユーザーの皆様からのフィードバックを集め、より良いシステムへとブラッシュアップするため、<br class="hidden md:block">
+                期間限定で完全無料でご利用いただけます。この機会に「非常識な帳簿」をご体感ください。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-white text-orange-700 font-bold rounded-xl text-lg hover:bg-gray-100 transition shadow-xl">
+                    入力用シートを取得する
+                </a>
+                <a href="#app" class="px-8 py-4 bg-orange-700 border border-orange-500 text-white font-bold rounded-xl text-lg hover:bg-orange-600 transition">
+                    アプリを利用する
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-orange-200">※フィードバックはnoteまたはココナラブログのコメント欄でお待ちしております。</p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-black text-white mb-4 md:mb-0">どんぶり帳簿</div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-white transition">note</a>
+                    <a href="#" class="hover:text-white transition">ココナラブログ</a>
+                    <a href="#" class="hover:text-white transition">利用規約</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-xs">
+                &copy; 2026 どんぶり帳簿 All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
