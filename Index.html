@@ -325,6 +325,71 @@
         </div>
     </section>
 
+    <!-- 利用手順セクション -->
+    <section id="start" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Getting Started</span>
+                <h2 class="text-3xl font-bold mt-2 mb-4">さっそく使ってみる</h2>
+                <p class="text-gray-600">どんぶり帳簿は以下の2つのステップで簡単に利用を開始できます。</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-orange-500"></div>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:ml-4">
+                        <div class="w-full md:w-2/3">
+                            <h3 class="text-2xl font-bold mb-3 flex items-center">
+                                <span class="bg-orange-100 text-orange-600 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
+                                入力用シートを取得する
+                            </h3>
+                            <p class="text-gray-600">
+                                まずは専用のスプレッドシートをご自身のGoogleアカウントにコピーしてください。このシートに日々の売上と経費を入力していきます。
+                            </p>
+                        </div>
+                        <div class="shrink-0 w-full md:w-auto">
+                            <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none block w-full text-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl transition-all shadow-md">
+                                シートをコピーする
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gray-400"></div>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:ml-4">
+                        <div class="w-full md:w-2/3">
+                            <h3 class="text-2xl font-bold mb-3 flex items-center">
+                                <span class="bg-gray-200 text-gray-600 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+                                決算書出力アプリを開く
+                            </h3>
+                            <p class="text-gray-600">
+                                シートへの入力が完了したら、こちらのアプリを開きます。シートのURLを貼り付けるだけで、e-Tax用の決算書データが出力されます。
+                            </p>
+                        </div>
+                        <div class="shrink-0 w-full md:w-auto">
+                            <a href="https://script.google.com/macros/s/AKfycbyusFIH-3J_bxFrh2GMVOx26-TIQdKniGgHDNe8KAeYIXLryCqeadBQteySdXXVgUve/exec" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none block w-full text-center px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-bold rounded-xl transition-all shadow-md">
+                                アプリを開く（別タブ）
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 p-6 bg-orange-50 rounded-2xl border border-orange-200 flex flex-col items-center justify-center">
+                <p class="text-sm text-gray-600 mb-3 font-bold text-center">ご利用には同意が必要です</p>
+                <label class="flex items-center gap-3 cursor-pointer select-none">
+                    <input type="checkbox" class="agreement-checkbox w-6 h-6 text-orange-600 rounded border-gray-400 focus:ring-orange-500 cursor-pointer">
+                    <span class="text-gray-800 font-bold">
+                        <a href="precautions.html" class="text-orange-600 underline hover:text-orange-800" target="_blank">注意事項</a>および<a href="terms.html" class="text-orange-600 underline hover:text-orange-800" target="_blank">利用規約</a>に同意する
+                    </span>
+                </label>
+            </div>
+        </div>
+    </section>
+
     <!-- CTAセクション -->
     <section id="cta" class="py-24 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -334,15 +399,26 @@
                 ユーザーの皆様からのフィードバックを集め、より良いシステムへとブラッシュアップするため、<br class="hidden md:block">
                 期間限定で完全無料でご利用いただけます。この機会に「非常識な帳簿」をご体感ください。
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-white text-orange-700 font-bold rounded-xl text-lg hover:bg-gray-100 transition shadow-xl">
+            
+            <div class="flex justify-center mb-8">
+                <label class="flex items-center gap-3 cursor-pointer select-none bg-orange-900/40 p-4 rounded-xl border border-orange-500/30">
+                    <input type="checkbox" class="agreement-checkbox w-6 h-6 text-orange-500 rounded border-orange-400 focus:ring-orange-400 cursor-pointer bg-orange-900">
+                    <span class="text-white font-bold">
+                        <a href="precautions.html" class="text-orange-300 underline hover:text-orange-200" target="_blank">注意事項</a>および<a href="terms.html" class="text-orange-300 underline hover:text-orange-200" target="_blank">利用規約</a>に同意して利用を開始する
+                    </span>
+                </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8">
+                <a href="https://docs.google.com/spreadsheets/d/1i_s7VgGoxFa2Y8cZVjDZM9GKUQYLMHSabeI2kBKUGC4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none px-8 py-4 bg-white text-orange-700 font-bold rounded-xl text-lg hover:bg-gray-100 transition shadow-xl">
                     1. 入力シートを取得する
                 </a>
-                <a href="https://script.google.com/macros/s/AKfycbyusFIH-3J_bxFrh2GMVOx26-TIQdKniGgHDNe8KAeYIXLryCqeadBQteySdXXVgUve/exec" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-gray-900 border border-gray-700 text-white font-bold rounded-xl text-lg hover:bg-gray-800 transition shadow-xl">
+                <a href="https://script.google.com/macros/s/AKfycbyusFIH-3J_bxFrh2GMVOx26-TIQdKniGgHDNe8KAeYIXLryCqeadBQteySdXXVgUve/exec" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none px-8 py-4 bg-gray-900 border border-gray-700 text-white font-bold rounded-xl text-lg hover:bg-gray-800 transition shadow-xl">
                     2. アプリを開く
                 </a>
             </div>
-            <p class="mt-8 text-sm text-orange-200">※フィードバックはnoteまたはココナラブログのコメント欄でお待ちしております。</p>
+            
+            <p class="text-sm text-orange-200">※フィードバックはnoteまたはココナラブログのコメント欄でお待ちしております。</p>
         </div>
     </section>
 
@@ -351,10 +427,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-2xl font-black text-white mb-4 md:mb-0">どんぶり帳簿</div>
-                <div class="flex space-x-6 text-sm">
+                <div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 text-sm">
                     <a href="#" class="hover:text-white transition">note</a>
                     <a href="#" class="hover:text-white transition">ココナラブログ</a>
-                    <a href="#" class="hover:text-white transition">利用規約</a>
+                    <a href="precautions.html" class="hover:text-white transition">注意事項</a>
+                    <a href="terms.html" class="hover:text-white transition">利用規約</a>
                 </div>
             </div>
             <div class="mt-8 text-center text-xs">
@@ -362,6 +439,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.agreement-checkbox');
+            const actionButtons = document.querySelectorAll('.requires-agreement');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', (e) => {
+                    const isChecked = e.target.checked;
+                    
+                    // 全てのチェックボックスの状態を同期させる
+                    checkboxes.forEach(cb => {
+                        cb.checked = isChecked;
+                    });
+
+                    // ボタンの有効・無効を切り替える
+                    actionButtons.forEach(btn => {
+                        if (isChecked) {
+                            btn.classList.remove('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+                        } else {
+                            btn.classList.add('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
