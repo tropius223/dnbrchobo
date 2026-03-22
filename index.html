@@ -28,11 +28,11 @@
                     <span class="text-2xl font-black text-orange-600 tracking-tight">どんぶり帳簿</span>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-6">
                         <a href="#pain" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">よくある挫折</a>
                         <a href="#concept" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">非常識なルール</a>
-                        <a href="#target" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition">対象者</a>
-                        <a href="#cta" class="bg-orange-600 text-white px-5 py-2 rounded-full font-medium hover:bg-orange-700 transition">無料で始める</a>
+                        <a href="manual.html" class="text-gray-600 hover:text-orange-600 px-3 py-2 font-medium transition underline decoration-orange-300 underline-offset-4">操作マニュアル</a>
+                        <a href="#cta" class="bg-orange-600 text-white px-5 py-2 rounded-full font-medium hover:bg-orange-700 transition shadow-sm">無料で始める</a>
                     </div>
                 </div>
             </div>
@@ -42,33 +42,40 @@
     <!-- ヒーローセクション -->
     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
-                <div class="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-700 font-bold text-sm mb-6 border border-orange-200">
-                    プロトタイプ版 1年間無料公開中
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="text-center lg:text-left lg:w-1/2">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-700 font-bold text-sm mb-6 border border-orange-200">
+                        プロトタイプ版 1年間無料公開中
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-8 leading-tight">
+                        副業の65万円控除を
+                        <br>
+                        <span class="text-gradient">記帳の力で現実に。</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-medium">
+                        副業だから事業所得にならないと諦めていませんか？
+                        <br class="hidden sm:block">
+                        収入300万円以下の副業でも帳簿の保存が65万円控除への鍵です。どんぶり帳簿は、最小限の手間でその要件をクリアするための専用ツールです。
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#start" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-orange-600 rounded-xl hover:bg-orange-700 shadow-lg shadow-orange-200 transition-all transform hover:-translate-y-1">
+                            アプリを無料で使ってみる
+                        </a>
+                        <a href="manual.html" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-700 bg-gray-100 border border-gray-300 rounded-xl hover:bg-gray-200 transition-all">
+                            操作ガイドを見る
+                        </a>
+                    </div>
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-8 leading-tight">
-                    副業の65万円控除を
-                    <br>
-                    <span class="text-gradient">記帳の力で現実に。</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-medium">
-                    副業だから事業所得にならないと諦めていませんか？
-                    <br class="hidden sm:block">
-                    最新の税務指針では、収入300万円以下の副業でも帳簿の保存が65万円控除への鍵です。どんぶり帳簿は、最小限の手間でその要件をクリアするための専用ツールです。
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#start" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-orange-600 rounded-xl hover:bg-orange-700 shadow-lg shadow-orange-200 transition-all transform hover:-translate-y-1">
-                        アプリを無料で使ってみる
-                    </a>
-                    <a href="#how-it-works" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-700 bg-gray-100 border border-gray-300 rounded-xl hover:bg-gray-200 transition-all">
-                        仕組みを見る
-                    </a>
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-gray-100 rounded-2xl shadow-2xl p-2 border border-gray-200 transform lg:rotate-2">
+                        <img src="images/app-main-view.png" alt="" class="rounded-xl w-full h-auto">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- ペイン（課題）セクション -->
+    <!-- ペインセクション -->
     <section id="pain" class="py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -81,14 +88,14 @@
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">所得区分の壁</h3>
-                    <p class="text-gray-400">年収300万円以下の副業は雑所得だから控除は受けられないという古い情報を信じて、大きな節税チャンスを逃している。</p>
+                    <p class="text-gray-400">「年収300万円以下の副業は雑所得だから控除は受けられない」という古い情報を信じて、大きな節税チャンスを逃している。</p>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
                     <div class="text-red-400 mb-4">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">複式簿記の壁</h3>
-                    <p class="text-gray-400">控除に必要な複式簿記のハードルが高すぎて、結局、何の節税メリットもない白色申告で済ませてしまっている。</p>
+                    <p class="text-gray-400">控除に必要な「複式簿記」のハードルが高すぎて、結局、何の節税メリットもない白色申告で済ませてしまっている。</p>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
                     <div class="text-red-400 mb-4">
@@ -101,7 +108,7 @@
         </div>
     </section>
 
-    <!-- コンセプト（常識の逆張り）セクション -->
+    <!-- コンセプトセクション -->
     <section id="concept" class="py-24 bg-orange-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -111,7 +118,7 @@
             </div>
 
             <div class="space-y-16 max-w-4xl mx-auto">
-                <!-- コンセプト1 -->
+                <!-- 1 -->
                 <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
                     <div class="md:w-1/3 flex justify-center">
                         <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">1</div>
@@ -119,12 +126,12 @@
                     <div class="md:w-2/3">
                         <h3 class="text-2xl font-bold mb-4">現預金の記帳をしないという選択</h3>
                         <p class="text-gray-600 leading-relaxed">
-                            すべてを事業主貸・借で処理することで、残高合わせの苦痛を排除。それでいて、65万円控除に必要な複式簿記の要件をクリアした仕訳を自動生成します。
+                            すべてを事業主貸・借で処理することで、残高合わせの苦痛を排除。それでいて、65万円控除に必要な「複式簿記」の要件をクリアした仕訳を自動生成します。
                         </p>
                     </div>
                 </div>
 
-                <!-- コンセプト2 -->
+                <!-- 2 -->
                 <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
                     <div class="md:w-1/3 flex justify-center">
                         <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">2</div>
@@ -137,7 +144,7 @@
                     </div>
                 </div>
 
-                <!-- コンセプト3 -->
+                <!-- 3 -->
                 <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
                     <div class="md:w-1/3 flex justify-center">
                         <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">3</div>
@@ -145,20 +152,7 @@
                     <div class="md:w-2/3">
                         <h3 class="text-2xl font-bold mb-4">データはあなたの手元に</h3>
                         <p class="text-gray-600 leading-relaxed">
-                            財務データは運営サーバーに保存されません。ご自身のGoogleドライブに保存されるため、プライバシーが守られるだけでなく、将来的なシステムの変更にも柔軟に対応できます。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- コンセプト4 -->
-                <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-orange-100">
-                    <div class="md:w-1/3 flex justify-center">
-                        <div class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-black text-4xl">4</div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold mb-4">機能を絞ったからこその圧倒的低コスト</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            保守コストを極限まで抑えることで、年額2,000円（予定）という、どの会計ソフトよりも安価な維持費を実現しました。プロトタイプ期間は完全無料です。
+                            財務データは運営サーバーに保存されません。ご自身のGoogleドライブに保存されるため、プライバシーが守られ、安心して利用できます。
                         </p>
                     </div>
                 </div>
@@ -166,66 +160,89 @@
         </div>
     </section>
 
-    <!-- 料金・機能比較セクション -->
+    <!-- 比較セクション -->
     <section id="comparison" class="py-24 bg-white border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Comparison</span>
                 <h2 class="text-3xl font-bold mt-2 mb-6">他社サービスとの違い</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    多機能であることよりも、青色申告を完了させるという目的に特化することで、圧倒的な低価格とシンプルさを実現しました。
+                    私たちは「やらないこと」を明確に決めています。多機能であることよりも、青色申告を完了させるという目的に特化することで、圧倒的な低価格を実現しました。
                 </p>
             </div>
 
             <div class="overflow-x-auto pb-6">
-                <table class="w-full text-left border-collapse min-w-[800px]">
+                <table class="w-full text-left border-collapse min-w-[900px]">
                     <thead>
                         <tr>
                             <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5">比較項目</th>
-                            <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5">freee<br><span class="text-xs font-normal text-gray-500">（スタータープラン等）</span></th>
-                            <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5">MoneyForward<br><span class="text-xs font-normal text-gray-500">（パーソナルミニ等）</span></th>
-                            <th class="p-5 border-b-2 border-orange-500 bg-orange-50 text-orange-700 font-black text-xl w-1/5 shadow-sm">どんぶり帳簿</th>
+                            <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5 text-center">freee<br><span class="text-[10px] font-normal">（スターター）</span></th>
+                            <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5 text-center">マネーフォワード<br><span class="text-[10px] font-normal">（パーソナルミニ）</span></th>
+                            <th class="p-5 border-b-2 border-gray-200 bg-gray-50 text-gray-600 font-bold w-1/5 text-center">弥生会計<br><span class="text-[10px] font-normal">（青色申告オンライン）</span></th>
+                            <th class="p-5 border-b-2 border-orange-500 bg-orange-50 text-orange-700 font-black text-xl w-1/5 text-center shadow-sm">どんぶり帳簿</th>
                         </tr>
                     </thead>
-                    <tbody class="text-gray-700">
+                    <tbody class="text-gray-700 text-sm">
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="p-5 border-b border-gray-200 font-bold bg-gray-50/50">年額料金（目安）</td>
-                            <td class="p-5 border-b border-gray-200">約15,000円〜</td>
-                            <td class="p-5 border-b border-gray-200">約12,000円〜</td>
-                            <td class="p-5 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold text-lg">
-                                2,000円 <span class="text-sm font-normal">（予定）</span><br>
-                                <span class="text-xs font-normal bg-orange-200 text-orange-800 px-2 py-0.5 rounded-full mt-1 inline-block">現在1年間無料</span>
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">年額料金（目安）</td>
+                            <td class="p-4 border-b border-gray-200 text-center">約15,000円〜</td>
+                            <td class="p-4 border-b border-gray-200 text-center">約12,000円〜</td>
+                            <td class="p-4 border-b border-gray-200 text-center">約9,600円〜</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold text-lg text-center">
+                                2,000円 <span class="text-[10px] font-normal">（予定）</span><br>
+                                <span class="text-[10px] bg-orange-200 text-orange-800 px-2 py-0.5 rounded-full inline-block mt-1">現在1年間無料</span>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="p-5 border-b border-gray-200 font-bold bg-gray-50/50">データの保存場所</td>
-                            <td class="p-5 border-b border-gray-200">各社サーバー</td>
-                            <td class="p-5 border-b border-gray-200">各社サーバー</td>
-                            <td class="p-5 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold">
-                                あなたのGoogle Drive<br><span class="text-xs font-normal">（運営側は閲覧不可）</span>
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">データの保存先</td>
+                            <td class="p-4 border-b border-gray-200 text-center">運営社サーバー</td>
+                            <td class="p-4 border-b border-gray-200 text-center">運営社サーバー</td>
+                            <td class="p-4 border-b border-gray-200 text-center">運営社サーバー</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50/50 text-orange-700 font-bold text-center">
+                                あなたのGoogleドライブ<br><span class="text-[10px] font-normal">（運営側は閲覧不可）</span>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="p-5 border-b border-gray-200 font-bold bg-gray-50/50">残高合わせの必要性</td>
-                            <td class="p-5 border-b border-gray-200 text-red-500 font-bold">必須</td>
-                            <td class="p-5 border-b border-gray-200 text-red-500 font-bold">必須</td>
-                            <td class="p-5 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold">
-                                不要<br><span class="text-xs font-normal">（事業主貸で一元処理）</span>
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">口座・カード自動連携</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-blue-600 font-bold">◯</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-blue-600 font-bold">◯</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-blue-600 font-bold">◯</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50/50 text-gray-400 text-center">
+                                ×<br><span class="text-[10px]">（現預金管理しないため不要）</span>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="p-5 border-b border-gray-200 font-bold bg-gray-50/50">こんな人向け</td>
-                            <td class="p-5 border-b border-gray-200 text-sm">多機能・自動化を好む人</td>
-                            <td class="p-5 border-b border-gray-200 text-sm">他サービスとの連携重視</td>
-                            <td class="p-5 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold text-sm">
-                                元手なしの副業で、確実に65万円控除を取りたい人
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">残高合わせの必要性</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-red-500 font-bold">必須</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-red-500 font-bold">必須</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-red-500 font-bold">必須</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold text-center text-base">
+                                不要<br><span class="text-[10px] font-normal">（事業主貸で一元処理）</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">所得税の65万控除</td>
+                            <td class="p-4 border-b border-gray-200 text-center">対応</td>
+                            <td class="p-4 border-b border-gray-200 text-center">対応</td>
+                            <td class="p-4 border-b border-gray-200 text-center">対応</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50/50 text-orange-700 font-bold text-center">
+                                対応<br><span class="text-[10px] font-normal">（要件を満たす帳簿を生成）</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="p-4 border-b border-gray-200 font-bold bg-gray-50/50 text-gray-600">こんな人向け</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-[11px]">多機能・自動化を好む人</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-[11px]">家計簿とも連携したい人</td>
+                            <td class="p-4 border-b border-gray-200 text-center text-[11px]">老舗の安心感を求める人</td>
+                            <td class="p-4 border-b border-orange-200 bg-orange-50 text-orange-700 font-bold text-center text-[12px]">
+                                元手なしの副業で、確実に結果（控除）を取りたい人
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <p class="text-xs text-gray-400 mt-4 text-right">
-                ※他社料金は2026年時点の各社プランの概算です。
+                ※他社料金は2026年時点の各社公式プラン（年払い）の概算です。正確な最新情報は各社公式サイトをご確認ください。
             </p>
         </div>
     </section>
@@ -234,77 +251,81 @@
     <section id="how-it-works" class="py-20 bg-white border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-12">使い方は驚くほどシンプル</h2>
-            <div class="flex flex-col md:flex-row justify-center items-start gap-8 relative">
-                <!-- ステップ間の線 -->
-                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-200 -z-10"></div>
-                
-                <div class="bg-white p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative shadow-sm">
-                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">1</div>
-                    <h3 class="text-lg font-bold mb-3">Googleログイン</h3>
-                    <p class="text-sm text-gray-600">アプリを開いてGoogleアカウントでログインします。データ保存用のフォルダが自動作成されます。</p>
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
+                <div class="bg-gray-50 p-6 rounded-3xl border border-gray-200 w-full md:w-1/3 flex flex-col">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-lg">1</div>
+                    <h3 class="text-xl font-bold mb-4">Googleログイン</h3>
+                    <p class="text-sm text-gray-600 mb-6">アプリを開いてログインするだけ。データはあなた自身のGoogleドライブに安全に保存されます。</p>
+                    <div class="mt-auto pt-4">
+                        <img src="images/step1-login.png" alt="" class="rounded-lg shadow-sm border border-gray-200 mx-auto">
+                    </div>
                 </div>
                 
-                <div class="bg-white p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative shadow-sm">
-                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">2</div>
-                    <h3 class="text-lg font-bold mb-3">直感的な入力画面</h3>
-                    <p class="text-sm text-gray-600">Webアプリの画面から、売上と経費を入力します。仕訳の知識は一切不要です。</p>
+                <div class="bg-gray-50 p-6 rounded-3xl border border-gray-200 w-full md:w-1/3 flex flex-col">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-lg">2</div>
+                    <h3 class="text-xl font-bold mb-4">迷わない入力画面</h3>
+                    <p class="text-sm text-gray-600 mb-6">売上と経費を直感的に入力。経理の知識がなくても、マトリクス形式でサクサク進みます。</p>
+                    <div class="mt-auto pt-4">
+                        <img src="images/step2-input.png" alt="" class="rounded-lg shadow-sm border border-gray-200 mx-auto">
+                    </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-gray-200 w-full md:w-1/3 relative shadow-sm">
-                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 mt-[-40px] shadow-lg">3</div>
-                    <h3 class="text-lg font-bold mb-3">決算書をワンクリック出力</h3>
-                    <p class="text-sm text-gray-600">入力データから、e-Tax転記用の決算書を自動作成。数値を写すだけで青色申告が完了します。</p>
+                <div class="bg-gray-50 p-6 rounded-3xl border border-gray-200 w-full md:w-1/3 flex flex-col">
+                    <div class="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-lg">3</div>
+                    <h3 class="text-xl font-bold mb-4">数値をe-Taxに転記</h3>
+                    <p class="text-sm text-gray-600 mb-6">自動算出された決算書の数値を、そのままe-Taxに写すだけで青色申告が完了します。</p>
+                    <div class="mt-auto pt-4">
+                        <img src="images/step3-output.png" alt="" class="rounded-lg shadow-sm border border-gray-200 mx-auto">
+                    </div>
                 </div>
+            </div>
+            
+            <div class="mt-16">
+                <a href="manual.html" class="inline-flex items-center text-orange-600 font-bold hover:underline">
+                    詳しい操作手順をマニュアルで確認する
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ターゲット（向いている人・向いていない人） -->
-    <section id="target" class="py-24 bg-gray-50">
+    <!-- ターゲットセクション -->
+    <section id="target" class="py-24 bg-gray-50 border-t border-gray-100">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">元手なしのビジネスに特化しています</h2>
                 <p class="text-gray-600">特定の課題を持つ方に深く刺さるよう、あえて機能を削ぎ落としています。</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 向いている人 -->
                 <div class="bg-white p-8 rounded-3xl border-t-4 border-t-orange-500 shadow-sm">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold">向いている人</h3>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        向いている人
+                    </h3>
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>元手なし、仕入なしのビジネス（エンジニア、ライター、コンサル等）</li>
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>副業所得が年20万円以上あり、所得税を節税したい</li>
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>事業用に口座やカードを分けておらず、既存ソフトで挫折した</li>
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 mt-0.5">■</span>経営分析は不要。青色申告という結果だけを効率よく得たい</li>
+                        <li>■ 元手なし、仕入なしのビジネス（エンジニア、ライター等）</li>
+                        <li>■ 副業所得が年20万円以上あり、所得税を節税したい</li>
+                        <li>■ 事業用口座を分けておらず、既存ソフトで挫折した</li>
+                        <li>■ 経営分析は不要。青色申告という結果だけ欲しい</li>
                     </ul>
                 </div>
-
-                <!-- 向いていない人 -->
                 <div class="bg-gray-100 p-8 rounded-3xl border-t-4 border-t-gray-400">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-600">向いていない人</h3>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-600">
+                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        向いていない人
+                    </h3>
                     <ul class="space-y-4 text-gray-600">
-                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>せどりや物販など、仕入や在庫管理が発生する</li>
-                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>精密な資金繰り管理や利益率分析が必要</li>
-                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>将来の法人成りを見据え、厳格な複式簿記に慣れておきたい</li>
-                        <li class="flex items-start"><span class="text-gray-400 mr-2 mt-0.5">■</span>30万円以上の高額な資産購入があり、減価償却が必要</li>
+                        <li>■ せどりや物販など、仕入や在庫管理が発生する</li>
+                        <li>■ 精密な資金繰り管理や利益率分析が必要</li>
+                        <li>■ 30万円以上の資産購入があり、減価償却が必要</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 利用手順セクション -->
-    <section id="start" class="py-24 bg-white">
+    <!-- 利用手順 -->
+    <section id="start" class="py-24 bg-white border-t border-gray-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Getting Started</span>
@@ -316,12 +337,8 @@
                 <div class="absolute top-0 left-0 w-2 h-full bg-orange-500"></div>
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:ml-4">
                     <div class="w-full md:w-2/3">
-                        <h3 class="text-2xl font-bold mb-3 flex items-center">
-                            Webアプリ版 どんぶり帳簿
-                        </h3>
-                        <p class="text-gray-600">
-                            Googleアカウントでログインするだけで、すぐに記帳を開始できます。
-                        </p>
+                        <h3 class="text-2xl font-bold mb-3 flex items-center">Webアプリ版 どんぶり帳簿</h3>
+                        <p class="text-gray-600">Googleアカウントでログインするだけで、すぐに記帳を開始できます。</p>
                     </div>
                     <div class="shrink-0 w-full md:w-auto">
                         <a href="https://donburi65.netlify.app" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none block w-full text-center px-12 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl transition-all shadow-md">
@@ -329,6 +346,12 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <a href="manual.html" class="text-sm text-gray-500 hover:text-orange-600 transition underline">
+                    使い方が不安な方はこちら（操作マニュアル）
+                </a>
             </div>
             
             <div class="mt-12 p-6 bg-orange-50 rounded-2xl border border-orange-200 flex flex-col items-center justify-center">
@@ -343,16 +366,13 @@
         </div>
     </section>
 
-    <!-- CTAセクション -->
+    <!-- CTA -->
     <section id="cta" class="py-24 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl sm:text-4xl font-black mb-6">現在、プロトタイプ版を無料公開中</h2>
             <p class="text-orange-100 text-lg mb-10 leading-relaxed">
                 フィードバックを元にブラッシュアップするため、期間限定で全ての機能を無料でご利用いただけます。
-                <br>
-                この機会に、ストレスのない帳簿付けをご体験ください。
             </p>
-            
             <div class="flex justify-center mb-8">
                 <label class="flex items-center gap-3 cursor-pointer select-none bg-orange-900/40 p-4 rounded-xl border border-orange-500/30">
                     <input type="checkbox" class="agreement-checkbox w-6 h-6 text-orange-500 rounded border-orange-400 focus:ring-orange-400 cursor-pointer bg-orange-900">
@@ -361,13 +381,11 @@
                     </span>
                 </label>
             </div>
-
             <div class="flex justify-center mb-8">
                 <a href="https://donburi65.netlify.app" target="_blank" rel="noopener noreferrer" class="requires-agreement opacity-50 cursor-not-allowed pointer-events-none px-12 py-4 bg-white text-orange-700 font-bold rounded-xl text-lg hover:bg-gray-100 transition shadow-xl">
                     アプリを開く
                 </a>
             </div>
-            
             <p class="text-sm text-orange-200">※フィードバックはnoteのコメント欄でお待ちしております。</p>
         </div>
     </section>
@@ -379,6 +397,7 @@
                 <div class="text-2xl font-black text-white mb-4 md:mb-0">どんぶり帳簿</div>
                 <div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 text-sm">
                     <a href="https://note.com/songen_plus/n/n25e617a42327" class="hover:text-white transition" target="_blank">note</a>
+                    <a href="manual.html" class="hover:text-white transition">操作マニュアル</a>
                     <a href="precautions.html" class="hover:text-white transition">注意事項</a>
                     <a href="terms.html" class="hover:text-white transition">利用規約</a>
                 </div>
@@ -393,7 +412,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const checkboxes = document.querySelectorAll('.agreement-checkbox');
             const actionButtons = document.querySelectorAll('.requires-agreement');
-
             checkboxes.forEach(checkbox => {
                 checkbox.addEventListener('change', (e) => {
                     const isChecked = e.target.checked;
